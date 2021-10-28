@@ -1,0 +1,29 @@
+***** Install Minikube on Linux/Ubuntu (Debuian) *****
+
+### Follow the steps to install Minikube on your linux system ###
+
+1. sudo apt-get update
+
+2. sudo apt-get upgrade
+
+3. sudo apt-get install socat
+
+4. sudo apt-get install curl
+
+5. sudo apt-get install apt-transport-https
+
+### for port forwarding 
+
+6. sudo apt-get install conntrack
+
+### install virtualBox / hyperVisor
+
+7. sudo apt-get install virtualbox virtualbox-ext-pack
+
+8. wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+
+9. sudo cp minikube-linux-amd64 /usr/local/bin/minikube
+
+10. sudo chmod 755 /usr/local/bin/minikube
+
+11. sudo minikube version

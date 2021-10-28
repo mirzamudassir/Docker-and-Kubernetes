@@ -1,0 +1,22 @@
+***** Install Kubectl on Linux/Ubuntu (Debuian) *****
+
+### Follow the steps to install Kubectl on your linux system ###
+
+1. sudo apt-get update
+
+2. sudo apt-get upgrade
+
+3. curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+
+4. chmod +x ./kubectl
+
+5. sudo mv ./kubectl /usr/local/bin/kubectl
+
+6. kubectl version -o json
+
+### here you should see the information related to Kubectl version. if you don't see the proper output, check the steps.
+
+### if you are already using a vmWare/hyperVisor
+
+7. sudo minikube start --vm-driver=none
+
