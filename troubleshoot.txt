@@ -1,0 +1,13 @@
+***** if you are installing Minikube in virtualBox
+then you can face issues. Because some virtualbox does not support
+nested virtualization. to solve this we will enable docker **** 
+
+1. minikube config set vm-driver none
+
+2. systemctl enable docker
+
+3. systemctl start Docker
+
+4. sudo usermod -aG docker $USER && newgrp docker
+
+5. minikube start
