@@ -10,4 +10,6 @@ nested virtualization. to solve this we will enable docker ****
 
 4. sudo usermod -aG docker $USER && newgrp docker
 
+*** now start the minikube on docker container ***
+
 5. minikube start --driver=docker
